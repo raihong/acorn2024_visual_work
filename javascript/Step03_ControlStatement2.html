@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step03_ControlStatement2.html</title>
+</head>
+<body>
+    <h1>if문 활용</h1>
+    <script>
+        /*
+            javascript 에서는 어떤 변수 안에 있는 값이 비었는지 안비었는지 여부를
+            if 문으로 확인할수 있다.
+
+            비었다(empty) 로 판정되는 값
+            0, "", null, undefiend  이 가지 값은 false 나 마찬가지이다.
+
+            null은 아무것도 없는 빈 공간을 나타내는 예약어이다
+        */
+
+
+        // if()문에 안에 들어가는 값은 기본적으로 booleantype만 가능하지만
+        // js에서는 있는지 없는지 변수값(string)을 넣어서 확인할수도 있다
+
+       let obj={name:"kim"};
+
+       // if(obj)라면 ()안에 있는값이 존재한다면
+       if(obj){
+        console.log(obj.name);
+       }
+
+       let obj2=null;
+
+       // 해당 console.log는 obj2에는 null 즉 false 존재 하지 않는 값이 되므로 실행되지 않는다.
+       if(obj2){
+        console.log(obj2.name);
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step04_Document.html</title>
+</head>
+<body>
+        
+    <h1 style="color: white; background-color: black">document object 사용해보기</h1>
+    <p id="one">p1</p>
+    <p id="two" class="my-class">p2</p>
+    <p id="three" class="my-class">p3</p>
+    <button id="myBtn">눌러보셈</button>
+    <button id="changeBtn">바꾸기</button>
+    <button id="ChangeColor">p2 의 색상 바꾸기</button>
+    <script>
+        document.querySelector("#myBtn").addEventListener("click", function(){
+            console.log("버튼을 눌렀네요?");
+        })
+
+        //바꾸기 버튼을 눌렀을때 h1 요소의 innerText 를
+        //"안녕하세요"로 변경되도록 프로그래밍 해보세요.
+
+        document.querySelector("#changeBtn").addEventListener("click", function(){
+            document.querySelector("h1").innerText = "안녕하세요";
+        }) 
+
+        document.querySelector("#ChangeColor").addEventListener("click", function(){
+            document.querySelector("#two").style = "color : white";
+            document.querySelector("#two").style.backgroundColor = "black";
+        })
+    
+    </script>
+</body>
+</html>
